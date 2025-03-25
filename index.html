@@ -1,21 +1,63 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-    })(window,document,'script','dataLayer','GTM-TFHC6QTT');</script>
-    <!-- End Google Tag Manager -->
-        <title>A page</title>
-    </head>
-<body> <!-- Google Tag Manager (noscript) -->
-    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TFHC6QTT"
-    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-    <!-- End Google Tag Manager (noscript) -->
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
-<p>uppdatering</p>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Analytics Demo</title>
+    <link rel="stylesheet" href="css/styles.css">
+    
+    <!-- Initialisera dataLayer -->
+    <script>
+        window.dataLayer = window.dataLayer || [];
+    </script>
+    
+    <!-- Analytics Script (ladda före sidinnehåll) -->
+    <script src="js/analytics.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Web Analytics Demo</h1>
+        <nav>
+            <ul>
+                <li><a href="#" id="home-link">Hem</a></li>
+                <li><a href="#" id="products-link">Produkter</a></li>
+                <li><a href="#" id="about-link">Om oss</a></li>
+                <li><a href="#" id="contact-link">Kontakt</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section id="hero">
+            <h2>Välkommen till vår dataLayer-demo</h2>
+            <p>Denna sida demonstrerar hur man använder dataLayer för webbanalys.</p>
+            <button id="cta-button">Klicka här!</button>
+        </section>
+        
+        <section id="products">
+            <h2>Produkter</h2>
+            <div class="product-grid">
+                <div class="product" data-product-id="123" data-product-name="Produkt A" data-product-price="19.99">
+                    <h3>Produkt A</h3>
+                    <p>199 kr</p>
+                    <button class="add-to-cart">Lägg i kundvagn</button>
+                </div>
+                <div class="product" data-product-id="456" data-product-name="Produkt B" data-product-price="29.99">
+                    <h3>Produkt B</h3>
+                    <p>299 kr</p>
+                    <button class="add-to-cart">Lägg i kundvagn</button>
+                </div>
+                <div class="product" data-product-id="789" data-product-name="Produkt C" data-product-price="39.99">
+                    <h3>Produkt C</h3>
+                    <p>399 kr</p>
+                    <button class="add-to-cart">Lägg i kundvagn</button>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2025 Web Analytics Demo</p>
+    </footer>
 </body>
-</html>
+</html
